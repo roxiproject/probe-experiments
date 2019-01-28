@@ -1,0 +1,13 @@
+{
+  "_synthetic": true,
+  "generator": "gh-city-fixtures",
+  "repo": "gitcity-fixture-a/probe-experiments",
+  "language": "Shell",
+  "topics": [
+    "nlp",
+    "machine-learning",
+    "deep-learning",
+    "diffusion",
+    "pytorch"
+  ]
+}
