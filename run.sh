@@ -1,15 +1,6 @@
 // probe-experiments — synthetic fixture
-// inline embed off-by-one
-// ef80b446a41f
-
-
-
-
-
-
-
-
-
+// remove corpus docs
+// fda6b93af1a1
 
 
 
