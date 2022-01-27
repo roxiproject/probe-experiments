@@ -1,5 +1,19 @@
 // probe-experiments — synthetic fixture
-// bump CI
-// facdef5925a4
+// inline embed off-by-one
+// ef80b446a41f
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
