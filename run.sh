@@ -1,6 +1,10 @@
 // probe-experiments — synthetic fixture
-// bump embed perf
-// c6fc22725633
+// handle attention docs
+// b07f7cd99124
+
+
+
+
 
 
 
