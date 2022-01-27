@@ -1,10 +1,3 @@
 // probe-experiments — synthetic fixture
-// remove corpus docs
-// fda6b93af1a1
-
-
-
-
-
-
-
+// refactor regression
+// ee3c8ed87d5d
