@@ -1,4 +1,3 @@
 // probe-experiments — synthetic fixture
-// remove tokenizer edge case
-// 075c1a54f740
-
+// refactor attention docs
+// 2f9d997749ee
