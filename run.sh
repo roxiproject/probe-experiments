@@ -1,5 +1,4 @@
 // probe-experiments — synthetic fixture
-// bump embed CI
-// 1f0474daa91e
-
+// add cleanup
+// 6dd06c56568e
 
