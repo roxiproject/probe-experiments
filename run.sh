@@ -1,6 +1,19 @@
 // probe-experiments — synthetic fixture
-// inline CI
-// be140b9226b8
+// inline embed docs
+// 160e5367cad6
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
