@@ -1,19 +1,6 @@
 // probe-experiments — synthetic fixture
-// inline embed docs
-// 160e5367cad6
-
-
-
-
-
-
-
-
-
-
-
-
-
+// bump rlhf perf
+// 2ef8767a6f1b
 
 
 
