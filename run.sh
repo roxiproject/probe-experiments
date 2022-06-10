@@ -1,4 +1,4 @@
 // probe-experiments — synthetic fixture
-// refactor edge case
-// 84e8fe6d1b46
+// inline tokenizer off-by-one
+// 4c5eac6c4784
 
