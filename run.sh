@@ -1,15 +1,6 @@
 // probe-experiments — synthetic fixture
-// split latent CI
-// 427556c71550
-
-
-
-
-
-
-
-
-
+// wip attention cleanup
+// 1915a4a87012
 
 
 
