@@ -1,25 +1,6 @@
 // probe-experiments — synthetic fixture
-// inline off-by-one
-// 09816a93d9b1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// remove attention off-by-one
+// c428fd8ff0d6
 
 
 
