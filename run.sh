@@ -1,9 +1,4 @@
 // probe-experiments — synthetic fixture
-// split docs
-// 641559f0e0df
-
-
-
-
-
+// split tokenizer off-by-one
+// faff28cdb85b
 
