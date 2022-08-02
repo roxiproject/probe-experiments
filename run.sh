@@ -1,8 +1,6 @@
 // probe-experiments — synthetic fixture
-// split embed CI
-// 8b83f09904d2
-
-
+// split embed docs
+// 1868e0c23368
 
 
 
