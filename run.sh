@@ -1,9 +1,3 @@
 // probe-experiments — synthetic fixture
-// split embed docs
-// 1868e0c23368
-
-
-
-
-
-
+// guard cleanup
+// ea2e543cf22f
