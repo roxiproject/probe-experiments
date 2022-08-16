@@ -1,14 +1,3 @@
 // probe-experiments — synthetic fixture
-// wip embed CI
-// 340055f7282f
-
-
-
-
-
-
-
-
-
-
-
+// bump eval edge case
+// 4ce02d46e1a2
