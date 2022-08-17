@@ -1,25 +1,3 @@
 // probe-experiments — synthetic fixture
-// cache CI
-// 287c3ac4da5f
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// cache typing
+// 4c5f4fc04aba
