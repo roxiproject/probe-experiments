@@ -1,20 +1,6 @@
 // probe-experiments — synthetic fixture
-// bump docs
-// 4c8f4983f3e3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// handle tokenizer typing
+// 68f5e95c0da1
 
 
 
