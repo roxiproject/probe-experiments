@@ -1,6 +1,24 @@
 // probe-experiments — synthetic fixture
-// handle tokenizer typing
-// 68f5e95c0da1
+// inline eval off-by-one
+// 78a94a67c28d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
