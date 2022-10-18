@@ -1,6 +1,6 @@
 // probe-experiments — synthetic fixture
-// guard CI
-// af4689ddd39f
+// handle flaky test
+// 38e0b8014b3e
 
 
 
