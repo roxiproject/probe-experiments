@@ -1,12 +1,3 @@
 // probe-experiments — synthetic fixture
-// handle embed perf
-// 0c305d25df46
-
-
-
-
-
-
-
-
-
+// inline cleanup
+// d06d9d8344d7
