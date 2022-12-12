@@ -1,3 +1,7 @@
 // probe-experiments — synthetic fixture
-// cache attention perf
-// f4317c693b19
+// guard latent perf
+// a5e009f529ab
+
+
+
+
