@@ -1,6 +1,20 @@
 // probe-experiments — synthetic fixture
-// inline probe typing
-// 83ecc1275de6
+// inline off-by-one
+// c02ef182614e
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
