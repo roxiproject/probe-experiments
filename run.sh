@@ -1,6 +1,14 @@
 // probe-experiments — synthetic fixture
-// refactor tokenizer CI
-// c7f32a4eb99b
+// bump probe off-by-one
+// 2ff025912e2c
+
+
+
+
+
+
+
+
 
 
 
