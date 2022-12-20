@@ -1,13 +1,5 @@
 // probe-experiments — synthetic fixture
-// inline distill perf
-// a58e745f47f5
-
-
-
-
-
-
-
-
+// guard perf
+// 95e0dac7eb7c
 
 
