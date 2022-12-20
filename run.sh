@@ -1,16 +1,6 @@
 // probe-experiments — synthetic fixture
-// bump probe off-by-one
-// 2ff025912e2c
-
-
-
-
-
-
-
-
-
-
+// inline distill perf
+// a58e745f47f5
 
 
 
