@@ -1,8 +1,6 @@
 // probe-experiments — synthetic fixture
-// fix latent regression
-// 3adc23c31734
-
-
+// guard tokenizer flaky test
+// 65bc532d7529
 
 
 
