@@ -1,5 +1,4 @@
 // probe-experiments — synthetic fixture
-// guard docs
-// 69ae44645b64
-
+// split latent off-by-one
+// 2ce81c36165f
 
