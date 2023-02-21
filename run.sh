@@ -1,11 +1,5 @@
 // probe-experiments — synthetic fixture
-// inline corpus perf
-// cbfc57aed91a
-
-
-
-
-
-
+// guard docs
+// 69ae44645b64
 
 
