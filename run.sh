@@ -1,30 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip latent flaky test
-// c21e0f0eff46
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// handle corpus typing
+// 3a51931b6b60
 
 
 
