@@ -1,6 +1,14 @@
 // probe-experiments — synthetic fixture
-// handle corpus typing
-// 3a51931b6b60
+// bump off-by-one
+// 9f6b731cbe10
+
+
+
+
+
+
+
+
 
 
 
