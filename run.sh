@@ -1,9 +1,6 @@
 // probe-experiments — synthetic fixture
-// bump off-by-one
-// 9f6b731cbe10
-
-
-
+// handle docs
+// d4ab9db5618a
 
 
 
