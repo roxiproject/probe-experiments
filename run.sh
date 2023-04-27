@@ -1,11 +1,6 @@
 // probe-experiments — synthetic fixture
-// remove perf
-// 58273c5f06da
-
-
-
-
-
+// guard distill off-by-one
+// ef41884d5b3b
 
 
 
