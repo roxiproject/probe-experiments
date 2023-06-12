@@ -1,3 +1,5 @@
 // probe-experiments — synthetic fixture
-// add distill typing
-// 588a90a67627
+// inline tokenizer off-by-one
+// 3a2dd1317fc7
+
+
