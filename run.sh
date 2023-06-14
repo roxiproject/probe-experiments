@@ -1,40 +1,4 @@
 // probe-experiments — synthetic fixture
-// bump CI
-// bb6bf03934f3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// guard latent off-by-one
+// 2ffef9834777
 
