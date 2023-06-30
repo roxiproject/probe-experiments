@@ -1,4 +1,4 @@
 // probe-experiments — synthetic fixture
-// guard latent off-by-one
-// 2ffef9834777
+// bump latent flaky test
+// 8626f158f7c7
 
