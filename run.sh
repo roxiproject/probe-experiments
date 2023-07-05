@@ -1,8 +1,6 @@
 // probe-experiments — synthetic fixture
-// inline typing
-// f05c8037620a
-
-
+// wip distill edge case
+// ebd26ea29d3b
 
 
 
