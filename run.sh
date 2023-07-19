@@ -1,6 +1,3 @@
 // probe-experiments — synthetic fixture
-// inline off-by-one
-// 22d17c4c6692
-
-
-
+// remove embed CI
+// 73bd2ec97832
