@@ -1,5 +1,5 @@
 // probe-experiments — synthetic fixture
-// bump edge case
-// 9ae7a1dff313
+// handle off-by-one
+// 02faeaabdfd6
 
 
