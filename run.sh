@@ -1,11 +1,3 @@
 // probe-experiments — synthetic fixture
-// wip latent docs
-// b16b1dfbd53d
-
-
-
-
-
-
-
-
+// inline edge case
+// ff246d60ee4e
