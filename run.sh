@@ -1,5 +1,13 @@
 // probe-experiments — synthetic fixture
-// handle off-by-one
-// 02faeaabdfd6
+// fix embed regression
+// dfbd60c4141a
+
+
+
+
+
+
+
+
 
 
