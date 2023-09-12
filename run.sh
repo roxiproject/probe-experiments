@@ -1,10 +1,6 @@
 // probe-experiments — synthetic fixture
-// fix embed regression
-// dfbd60c4141a
-
-
-
-
+// guard cleanup
+// 3ae31db225a7
 
 
 
