@@ -1,11 +1,6 @@
 // probe-experiments — synthetic fixture
-// cache edge case
-// ffb9f3f42d49
-
-
-
-
-
+// fix off-by-one
+// 094645f5f456
 
 
 
