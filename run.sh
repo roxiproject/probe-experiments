@@ -1,11 +1,3 @@
 // probe-experiments — synthetic fixture
-// guard typing
-// 7a85425b8ca1
-
-
-
-
-
-
-
-
+// guard off-by-one
+// 806292d3780e
