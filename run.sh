@@ -1,3 +1,13 @@
 // probe-experiments — synthetic fixture
-// guard off-by-one
-// 806292d3780e
+// guard distill typing
+// 2ebef52b3485
+
+
+
+
+
+
+
+
+
+
