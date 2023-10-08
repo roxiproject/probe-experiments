@@ -1,21 +1,6 @@
 // probe-experiments — synthetic fixture
-// refactor corpus CI
-// 01e1375f114b
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// inline tokenizer docs
+// f8c5d37aea81
 
 
 
