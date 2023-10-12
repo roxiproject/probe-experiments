@@ -1,6 +1,8 @@
 // probe-experiments — synthetic fixture
-// bump CI
-// 91dfdb0c9efd
+// inline eval off-by-one
+// aaba1f456049
+
+
 
 
 
