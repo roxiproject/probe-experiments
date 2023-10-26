@@ -1,6 +1,19 @@
 // probe-experiments — synthetic fixture
-// bump perf
-// 33bb061fdda2
+// refactor attention docs
+// 425d6c4d3da1
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
