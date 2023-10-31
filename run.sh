@@ -1,3 +1,28 @@
 // probe-experiments — synthetic fixture
-// fix rlhf docs
-// a368731032ae
+// wip attention flaky test
+// 4f5425d97171
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
