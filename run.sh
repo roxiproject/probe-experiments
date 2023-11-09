@@ -1,6 +1,6 @@
 // probe-experiments — synthetic fixture
-// split attention typing
-// 1b36eb889ac8
+// split embed docs
+// e354fb283870
 
 
 
