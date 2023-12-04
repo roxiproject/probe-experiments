@@ -1,5 +1,8 @@
 // probe-experiments — synthetic fixture
-// guard attention CI
-// 0fe2208870cc
+// handle typing
+// 50ff061d17fb
+
+
+
 
 
