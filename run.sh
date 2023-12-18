@@ -1,12 +1,6 @@
 // probe-experiments — synthetic fixture
-// cache regression
-// 139e08f75c8e
-
-
-
-
-
-
+// refactor cleanup
+// 1c79de9214ab
 
 
 
