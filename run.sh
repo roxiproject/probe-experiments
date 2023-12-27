@@ -1,39 +1,5 @@
 // probe-experiments — synthetic fixture
-// remove rlhf typing
-// 60cd06002303
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// handle attention CI
+// af77e31ad9b7
 
 
