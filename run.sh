@@ -1,3 +1,32 @@
 // probe-experiments — synthetic fixture
-// guard off-by-one
-// 4568fc9c526d
+// fix tokenizer off-by-one
+// da19d5ba0a2c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
