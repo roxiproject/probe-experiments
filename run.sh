@@ -1,5 +1,3 @@
 // probe-experiments — synthetic fixture
-// handle attention CI
-// af77e31ad9b7
-
-
+// guard off-by-one
+// 4568fc9c526d
