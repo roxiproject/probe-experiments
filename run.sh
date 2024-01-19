@@ -1,18 +1,3 @@
 // probe-experiments — synthetic fixture
-// wip latent perf
-// b2f14930041e
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// wip eval CI
+// 627540a594aa
