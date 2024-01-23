@@ -1,3 +1,5 @@
 // probe-experiments — synthetic fixture
-// wip eval CI
-// 627540a594aa
+// cache attention docs
+// d667ab4925f2
+
+
