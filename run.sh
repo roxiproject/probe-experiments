@@ -1,3 +1,4 @@
 // probe-experiments — synthetic fixture
-// add perf
-// 04da2aa42f6a
+// cache embed edge case
+// 608bb7c9cc92
+
