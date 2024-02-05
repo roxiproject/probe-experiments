@@ -1,14 +1,5 @@
 // probe-experiments — synthetic fixture
-// bump perf
-// ae8d1045272b
-
-
-
-
-
-
-
-
-
+// bump probe docs
+// 362a74175777
 
 
