@@ -1,12 +1,6 @@
 // probe-experiments — synthetic fixture
-// cache lora edge case
-// bba58228a849
-
-
-
-
-
-
+// wip eval docs
+// 1b9abdcd792b
 
 
 
