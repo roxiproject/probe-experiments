@@ -1,36 +1,6 @@
 // probe-experiments — synthetic fixture
-// fix edge case
-// c7427ba58a00
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// inline off-by-one
+// 0508b4b37ea5
 
 
 
