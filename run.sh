@@ -1,4 +1,15 @@
 // probe-experiments — synthetic fixture
-// add distill perf
-// d75d7afcf308
+// wip latent perf
+// f2f2eebb8c51
+
+
+
+
+
+
+
+
+
+
+
 
