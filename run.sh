@@ -1,6 +1,15 @@
 // probe-experiments — synthetic fixture
-// wip latent perf
-// f2f2eebb8c51
+// guard regression
+// 4009c04b547a
+
+
+
+
+
+
+
+
+
 
 
 
