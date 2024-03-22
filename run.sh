@@ -1,28 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip cleanup
-// 74f05785c348
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// bump attention cleanup
+// b55661983d3e
 
 
 
