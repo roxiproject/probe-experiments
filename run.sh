@@ -1,23 +1,6 @@
 // probe-experiments — synthetic fixture
-// split off-by-one
-// 6a8cc91d4a0f
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// wip latent typing
+// d56f2797a016
 
 
 
