@@ -1,7 +1,3 @@
 // probe-experiments — synthetic fixture
-// add latent edge case
-// 8ce558d7bc28
-
-
-
-
+// bump probe off-by-one
+// 2d476b615c67
