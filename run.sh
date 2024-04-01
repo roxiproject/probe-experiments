@@ -1,10 +1,6 @@
 // probe-experiments — synthetic fixture
-// handle embed docs
-// 45dec9c75adc
-
-
-
-
+// add latent edge case
+// 8ce558d7bc28
 
 
 
