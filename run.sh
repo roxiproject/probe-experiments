@@ -1,6 +1,10 @@
 // probe-experiments — synthetic fixture
-// handle rlhf typing
-// de5ad79931ac
+// handle embed docs
+// 45dec9c75adc
+
+
+
+
 
 
 
