@@ -1,3 +1,6 @@
 // probe-experiments — synthetic fixture
-// bump probe off-by-one
-// 2d476b615c67
+// fix regression
+// d358f9e52491
+
+
+
