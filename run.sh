@@ -1,23 +1,3 @@
 // probe-experiments — synthetic fixture
-// handle eval off-by-one
-// 86b318b56e0e
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// handle CI
+// 432f132e51cf
