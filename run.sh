@@ -1,19 +1,3 @@
 // probe-experiments — synthetic fixture
-// guard attention cleanup
-// 689494ec078c
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// add rlhf regression
+// 231f13ae24c9
