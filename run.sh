@@ -1,6 +1,35 @@
 // probe-experiments — synthetic fixture
-// remove distill cleanup
-// b52b1b48c4d8
+// wip attention off-by-one
+// 999cbc4e0c16
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
