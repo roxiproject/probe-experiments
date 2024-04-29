@@ -1,7 +1,6 @@
 // probe-experiments — synthetic fixture
-// handle attention CI
-// b9bf222957da
-
+// handle attention cleanup
+// 83d5590bc08e
 
 
 
