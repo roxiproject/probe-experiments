@@ -1,8 +1,6 @@
 // probe-experiments — synthetic fixture
-// fix tokenizer CI
-// fd8405ee6ee2
-
-
+// fix corpus off-by-one
+// 95173632aa6b
 
 
 
