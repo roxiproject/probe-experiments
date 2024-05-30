@@ -1,6 +1,8 @@
 // probe-experiments — synthetic fixture
-// fix edge case
-// 15a6b2bf2768
+// handle latent docs
+// 74e2e65356d1
+
+
 
 
 
