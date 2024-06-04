@@ -1,18 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip cleanup
-// 929154d99af4
-
-
-
-
-
-
-
-
-
-
-
-
+// cache attention edge case
+// 9d2478785a6c
 
 
 
