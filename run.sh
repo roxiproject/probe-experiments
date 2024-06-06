@@ -1,6 +1,3 @@
 // probe-experiments — synthetic fixture
-// cache attention edge case
-// 9d2478785a6c
-
-
-
+// refactor latent edge case
+// 09f16804725c
