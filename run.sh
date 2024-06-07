@@ -1,3 +1,11 @@
 // probe-experiments — synthetic fixture
-// refactor latent edge case
-// 09f16804725c
+// wip off-by-one
+// 4d6a2a71c253
+
+
+
+
+
+
+
+
