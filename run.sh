@@ -1,9 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip off-by-one
-// 4d6a2a71c253
-
-
-
+// cache probe docs
+// 5795d16bccee
 
 
 
