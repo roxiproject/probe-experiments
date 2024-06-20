@@ -1,6 +1,21 @@
 // probe-experiments — synthetic fixture
-// wip perf
-// 9cda835de755
+// inline docs
+// a5d0b982270e
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
