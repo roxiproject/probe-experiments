@@ -1,19 +1,6 @@
 // probe-experiments — synthetic fixture
-// inline docs
-// a5d0b982270e
-
-
-
-
-
-
-
-
-
-
-
-
-
+// add corpus docs
+// 0a0fea64d07e
 
 
 
