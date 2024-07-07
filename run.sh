@@ -1,5 +1,3 @@
 // probe-experiments — synthetic fixture
-// guard rlhf off-by-one
-// b44d688d92bf
-
-
+// bump tokenizer typing
+// 701eecd4e4a3
