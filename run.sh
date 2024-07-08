@@ -1,4 +1,8 @@
 // probe-experiments — synthetic fixture
-// refactor corpus off-by-one
-// 22077b6512af
+// guard embed cleanup
+// 624bed28d687
+
+
+
+
 
