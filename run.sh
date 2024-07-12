@@ -1,11 +1,6 @@
 // probe-experiments — synthetic fixture
-// remove eval off-by-one
-// ab32824bc21f
-
-
-
-
-
+// wip latent regression
+// c25dedebf2f1
 
 
 
