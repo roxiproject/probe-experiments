@@ -1,16 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip latent regression
-// c25dedebf2f1
-
-
-
-
-
-
-
-
-
-
+// guard off-by-one
+// 4e2177f56975
 
 
 
