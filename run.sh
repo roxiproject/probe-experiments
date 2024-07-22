@@ -1,6 +1,7 @@
 // probe-experiments — synthetic fixture
-// refactor corpus perf
-// 725307c6a553
+// wip embed cleanup
+// 0846a2a50596
+
 
 
 
