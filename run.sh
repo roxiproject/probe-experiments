@@ -1,14 +1,6 @@
 // probe-experiments — synthetic fixture
-// bump CI
-// 7a2cad520c32
-
-
-
-
-
-
-
-
+// inline latent typing
+// 6ebf4fcb8bc2
 
 
 
