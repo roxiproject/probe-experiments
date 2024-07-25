@@ -1,17 +1,6 @@
 // probe-experiments — synthetic fixture
-// inline latent typing
-// 6ebf4fcb8bc2
-
-
-
-
-
-
-
-
-
-
-
+// guard probe docs
+// 1a550e7348b0
 
 
 
