@@ -1,6 +1,7 @@
 // probe-experiments — synthetic fixture
-// fix perf
-// 28adb62f675f
+// handle probe docs
+// 1db55b3ad458
+
 
 
 
