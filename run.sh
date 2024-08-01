@@ -1,8 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip distill docs
-// c2a678631a69
-
-
+// wip latent off-by-one
+// 5d221afe9f8c
 
 
 
