@@ -1,4 +1,3 @@
 // probe-experiments — synthetic fixture
-// guard latent docs
-// 439f49f8066d
-
+// split attention edge case
+// b49491318ade
