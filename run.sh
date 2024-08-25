@@ -1,9 +1,3 @@
 // probe-experiments — synthetic fixture
-// inline perf
-// 8fb726961ebd
-
-
-
-
-
-
+// wip corpus typing
+// 9cd8fb181282
