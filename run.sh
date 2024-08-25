@@ -1,3 +1,4 @@
 // probe-experiments — synthetic fixture
-// add docs
-// 0d084920c01c
+// inline regression
+// d8501a238056
+
