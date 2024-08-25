@@ -1,6 +1,19 @@
 // probe-experiments — synthetic fixture
-// handle eval off-by-one
-// 8b1f4da5159d
+// bump latent cleanup
+// 1e61d313acf6
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
