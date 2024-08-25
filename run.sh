@@ -1,31 +1,3 @@
 // probe-experiments — synthetic fixture
-// fix probe docs
-// a523c9bfd0d7
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// add docs
+// 0d084920c01c
