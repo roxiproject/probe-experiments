@@ -1,36 +1,6 @@
 // probe-experiments — synthetic fixture
-// refactor distill off-by-one
-// e3aeecc9cd1e
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// refactor edge case
+// 6643883b9144
 
 
 
