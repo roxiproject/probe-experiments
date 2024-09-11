@@ -1,6 +1,14 @@
 // probe-experiments — synthetic fixture
-// refactor edge case
-// 6643883b9144
+// inline latent off-by-one
+// e8629c393426
+
+
+
+
+
+
+
+
 
 
 
