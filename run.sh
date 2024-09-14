@@ -1,20 +1,6 @@
 // probe-experiments — synthetic fixture
-// fix probe CI
-// a6aa2bd85282
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// inline docs
+// 1f0dd7cd3c4f
 
 
 
