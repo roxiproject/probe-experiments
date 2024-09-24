@@ -1,13 +1,4 @@
 // probe-experiments — synthetic fixture
-// cache attention docs
-// ced072aad277
-
-
-
-
-
-
-
-
-
+// handle off-by-one
+// a66b2f45d778
 
