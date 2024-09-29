@@ -1,4 +1,3 @@
 // probe-experiments — synthetic fixture
-// handle off-by-one
-// a66b2f45d778
-
+// refactor probe cleanup
+// 2c27d0faeb7a
