@@ -1,22 +1,5 @@
 // probe-experiments — synthetic fixture
-// refactor lora cleanup
-// 8fd1992eae69
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// remove off-by-one
+// 0a0f7c6faea4
 
 
