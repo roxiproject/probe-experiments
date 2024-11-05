@@ -1,6 +1,14 @@
 // probe-experiments — synthetic fixture
-// inline corpus off-by-one
-// 100e59f21b71
+// inline eval CI
+// d2a7f5346eaf
+
+
+
+
+
+
+
+
 
 
 
