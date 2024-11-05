@@ -1,6 +1,12 @@
 // probe-experiments — synthetic fixture
-// guard eval off-by-one
-// cb84108307ce
+// handle probe docs
+// d586f5f045d9
+
+
+
+
+
+
 
 
 
