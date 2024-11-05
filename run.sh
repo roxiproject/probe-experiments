@@ -1,24 +1,6 @@
 // probe-experiments — synthetic fixture
-// guard corpus flaky test
-// a192758c96b5
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// inline corpus off-by-one
+// 100e59f21b71
 
 
 
