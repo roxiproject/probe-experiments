@@ -1,15 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip attention typing
-// 18bb5765ef96
-
-
-
-
-
-
-
-
-
+// refactor distill typing
+// 2b98845abf12
 
 
 
