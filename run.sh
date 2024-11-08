@@ -1,13 +1,3 @@
 // probe-experiments — synthetic fixture
-// add lora docs
-// 580ddf98ac1a
-
-
-
-
-
-
-
-
-
-
+// add eval regression
+// fa35e3a78787
