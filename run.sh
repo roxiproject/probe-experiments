@@ -1,10 +1,3 @@
 // probe-experiments — synthetic fixture
-// bump embed cleanup
-// e818806816cb
-
-
-
-
-
-
-
+// inline docs
+// e3c6979822d6
