@@ -1,6 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip embed flaky test
-// 105526f73df7
+// fix CI
+// 8d3e1e73d1bb
 
 
 
