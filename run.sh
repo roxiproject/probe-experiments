@@ -1,4 +1,8 @@
 // probe-experiments — synthetic fixture
-// guard latent off-by-one
-// 3af505bf2394
+// refactor tokenizer edge case
+// 58697cd29c61
+
+
+
+
 
