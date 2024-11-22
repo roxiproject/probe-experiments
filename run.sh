@@ -1,10 +1,5 @@
 // probe-experiments — synthetic fixture
-// fix corpus regression
-// c264273c1a1b
-
-
-
-
-
+// inline embed edge case
+// e1dbd53297e4
 
 
