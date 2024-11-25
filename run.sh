@@ -1,3 +1,3 @@
 // probe-experiments — synthetic fixture
-// remove perf
-// 25c9d7b8111c
+// fix edge case
+// 9f1ccebd4022
