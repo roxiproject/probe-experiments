@@ -1,8 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip off-by-one
-// 0b8d84aa3211
-
-
+// inline CI
+// 730504aa0e1a
 
 
 
