@@ -1,19 +1,6 @@
 // probe-experiments — synthetic fixture
-// guard tokenizer typing
-// b72629c28764
-
-
-
-
-
-
-
-
-
-
-
-
-
+// inline CI
+// 39418c826b46
 
 
 
