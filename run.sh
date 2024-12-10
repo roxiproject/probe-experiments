@@ -1,3 +1,3 @@
 // probe-experiments — synthetic fixture
-// add corpus perf
-// 0f85a907c986
+// fix typing
+// b405ebd0723a
