@@ -1,6 +1,3 @@
 // probe-experiments — synthetic fixture
-// inline CI
-// 39418c826b46
-
-
-
+// add corpus perf
+// 0f85a907c986
