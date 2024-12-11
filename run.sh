@@ -1,12 +1,6 @@
 // probe-experiments — synthetic fixture
-// add cleanup
-// 321d8b945753
-
-
-
-
-
-
+// remove off-by-one
+// b65cbaf8694c
 
 
 
