@@ -1,14 +1,3 @@
 // probe-experiments — synthetic fixture
-// refactor CI
-// d3e263c6e85a
-
-
-
-
-
-
-
-
-
-
-
+// inline embed cleanup
+// d989ffe42e5b
