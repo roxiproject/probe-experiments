@@ -1,14 +1,6 @@
 // probe-experiments — synthetic fixture
-// guard docs
-// 5f4d997c63f0
-
-
-
-
-
-
-
-
+// guard latent off-by-one
+// ab9f359b7d89
 
 
 
