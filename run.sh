@@ -1,6 +1,7 @@
 // probe-experiments — synthetic fixture
-// add lora typing
-// 6c3a4256b839
+// inline typing
+// 50def2c57be8
+
 
 
 
