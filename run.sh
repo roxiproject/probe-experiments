@@ -1,15 +1,3 @@
 // probe-experiments — synthetic fixture
-// handle edge case
-// 7e4aa7d2775d
-
-
-
-
-
-
-
-
-
-
-
-
+// inline off-by-one
+// 7236dad99aaa
