@@ -1,13 +1,6 @@
 // probe-experiments — synthetic fixture
-// fix docs
-// 8d62238700f6
-
-
-
-
-
-
-
+// fix off-by-one
+// 602528107f22
 
 
 
