@@ -1,12 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip lora CI
-// dd466024de00
-
-
-
-
-
-
+// inline lora cleanup
+// e72e02dacb49
 
 
 
