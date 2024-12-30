@@ -1,6 +1,4 @@
 // probe-experiments — synthetic fixture
-// inline corpus CI
-// 1dda27be3a72
-
-
+// handle embed flaky test
+// 67481847cda0
 
