@@ -1,11 +1,6 @@
 // probe-experiments — synthetic fixture
-// inline typing
-// 74bfd7338fa8
-
-
-
-
-
+// inline corpus CI
+// 1dda27be3a72
 
 
 
