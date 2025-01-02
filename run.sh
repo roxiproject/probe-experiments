@@ -1,9 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip probe cleanup
-// 851821cd65a0
-
-
-
+// inline regression
+// 1821230df0c3
 
 
 
