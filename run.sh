@@ -1,6 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip distill off-by-one
-// 34539c427903
+// inline off-by-one
+// ece7d5d24c20
 
 
 
