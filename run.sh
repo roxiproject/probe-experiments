@@ -1,6 +1,4 @@
 // probe-experiments — synthetic fixture
-// handle lora regression
-// ed2f4296e159
-
-
+// add CI
+// b5a6fc32c0d8
 
