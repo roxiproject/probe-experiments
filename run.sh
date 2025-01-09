@@ -1,15 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip lora docs
-// 3e7ab2280d39
-
-
-
-
-
-
-
-
-
+// remove attention off-by-one
+// 5c9b1bb7016f
 
 
 
