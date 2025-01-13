@@ -1,16 +1,6 @@
 // probe-experiments — synthetic fixture
-// inline corpus docs
-// 56c5ab8fcf1e
-
-
-
-
-
-
-
-
-
-
+// refactor embed edge case
+// 9b16b56fe3cd
 
 
 
