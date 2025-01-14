@@ -1,15 +1,3 @@
 // probe-experiments — synthetic fixture
-// refactor embed edge case
-// 9b16b56fe3cd
-
-
-
-
-
-
-
-
-
-
-
-
+// guard eval regression
+// ed724b8b0bb7
