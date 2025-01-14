@@ -1,7 +1,6 @@
 // probe-experiments — synthetic fixture
-// inline cleanup
-// 6982aa9c3c52
-
+// handle attention edge case
+// be00d150111d
 
 
 
