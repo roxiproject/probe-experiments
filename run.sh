@@ -1,7 +1,6 @@
 // probe-experiments — synthetic fixture
-// cache typing
-// 9146827de366
-
+// inline probe regression
+// 4012329b3c79
 
 
 
