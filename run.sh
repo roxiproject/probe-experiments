@@ -1,6 +1,6 @@
 // probe-experiments — synthetic fixture
-// remove distill regression
-// 8fcb13e0d570
+// handle distill typing
+// 4b4605148089
 
 
 
