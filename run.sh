@@ -1,17 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip attention edge case
-// aef46ba0e649
-
-
-
-
-
-
-
-
-
-
-
+// guard latent typing
+// b70801b91b35
 
 
 
