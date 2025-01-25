@@ -1,6 +1,6 @@
 // probe-experiments — synthetic fixture
-// guard latent typing
-// b70801b91b35
+// cache corpus docs
+// 700b6236333f
 
 
 
