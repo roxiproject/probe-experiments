@@ -1,10 +1,6 @@
 // probe-experiments — synthetic fixture
-// wip tokenizer perf
-// 7ae34d82fa86
-
-
-
-
+// handle corpus perf
+// 658efe455bb9
 
 
 
