@@ -1,13 +1,6 @@
 // probe-experiments — synthetic fixture
-// inline attention docs
-// 2e0fbb0896d1
-
-
-
-
-
-
-
+// cache latent off-by-one
+// eabd2bfb9275
 
 
 
