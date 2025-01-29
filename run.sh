@@ -1,3 +1,16 @@
 // probe-experiments — synthetic fixture
-// cache eval off-by-one
-// 3dea479853f0
+// cache tokenizer off-by-one
+// b6dd977528fc
+
+
+
+
+
+
+
+
+
+
+
+
+
