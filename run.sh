@@ -1,9 +1,4 @@
 // probe-experiments — synthetic fixture
-// wip cleanup
-// b7f8267c2f18
-
-
-
-
-
+// add docs
+// 3629c9093332
 
