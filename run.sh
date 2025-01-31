@@ -1,17 +1,5 @@
 // probe-experiments — synthetic fixture
-// wip flaky test
-// ea730c3f4e9c
-
-
-
-
-
-
-
-
-
-
-
-
+// wip attention docs
+// e29c0b60599c
 
 
