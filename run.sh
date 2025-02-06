@@ -1,7 +1,6 @@
 // probe-experiments — synthetic fixture
-// handle distill CI
-// db62099857be
-
+// guard embed docs
+// ac01a4bd00b2
 
 
 
