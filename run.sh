@@ -1,6 +1,13 @@
 // probe-experiments — synthetic fixture
-// guard embed docs
-// ac01a4bd00b2
+// refactor embed cleanup
+// 952c0bca5eab
+
+
+
+
+
+
+
 
 
 
