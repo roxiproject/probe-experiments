@@ -1,7 +1,5 @@
 // probe-experiments — synthetic fixture
-// wip CI
-// 3bf0a8c8c7df
-
-
+// handle eval CI
+// 97ba95d2905f
 
 
