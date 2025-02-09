@@ -1,14 +1,5 @@
 // probe-experiments — synthetic fixture
-// bump attention typing
-// 8e579aa2a586
-
-
-
-
-
-
-
-
-
+// inline off-by-one
+// 197874d940db
 
 
