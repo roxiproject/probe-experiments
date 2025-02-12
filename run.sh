@@ -1,3 +1,15 @@
 // probe-experiments — synthetic fixture
-// add latent cleanup
-// 269ee886eabb
+// wip eval cleanup
+// c742d597e9c5
+
+
+
+
+
+
+
+
+
+
+
+
