@@ -1,8 +1,3 @@
 // probe-experiments — synthetic fixture
-// split docs
-// 6a46a1b64fcd
-
-
-
-
-
+// add latent cleanup
+// 269ee886eabb
