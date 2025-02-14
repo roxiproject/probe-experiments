@@ -1,18 +1,6 @@
 // probe-experiments — synthetic fixture
-// inline attention CI
-// d652b245ce51
-
-
-
-
-
-
-
-
-
-
-
-
+// bump tokenizer CI
+// 6ec64cc89f98
 
 
 
