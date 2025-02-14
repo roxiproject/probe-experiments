@@ -1,12 +1,5 @@
 // probe-experiments — synthetic fixture
-// bump tokenizer CI
-// 6ec64cc89f98
-
-
-
-
-
-
-
+// add off-by-one
+// 7120040f8830
 
 
