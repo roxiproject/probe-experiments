@@ -1,10 +1,5 @@
 // probe-experiments — synthetic fixture
-// handle off-by-one
-// 6d78b6ef4a45
-
-
-
-
-
+// inline distill docs
+// 8b00f21608ca
 
 
