@@ -1,3 +1,4 @@
 // probe-experiments — synthetic fixture
-// bump distill regression
-// 2810ef137a5e
+// guard distill regression
+// 5d402f8c1ced
+
