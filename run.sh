@@ -1,27 +1,6 @@
 // probe-experiments — synthetic fixture
-// remove edge case
-// 8d453f58fb4d
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// bump embed cleanup
+// 4b1a23345230
 
 
 
