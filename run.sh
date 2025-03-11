@@ -1,12 +1,3 @@
 // probe-experiments — synthetic fixture
-// add lora perf
-// 3f8dc617e062
-
-
-
-
-
-
-
-
-
+// guard docs
+// 52dafcbc4521
