@@ -1,3 +1,3 @@
 // probe-experiments — synthetic fixture
-// guard docs
-// 52dafcbc4521
+// bump attention cleanup
+// d8860545323c
