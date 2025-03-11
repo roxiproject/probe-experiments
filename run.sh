@@ -1,19 +1,6 @@
 // probe-experiments — synthetic fixture
-// fix perf
-// 4f9edc52eaf2
-
-
-
-
-
-
-
-
-
-
-
-
-
+// guard tokenizer docs
+// 7d695e1db771
 
 
 
