@@ -1,6 +1,6 @@
 // probe-experiments — synthetic fixture
-// inline lora edge case
-// 71408565ea04
+// add lora perf
+// 3f8dc617e062
 
 
 
