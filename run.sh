@@ -1,5 +1,13 @@
 // probe-experiments — synthetic fixture
-// remove edge case
-// 09d959860c85
+// inline off-by-one
+// 4315e0b2689b
+
+
+
+
+
+
+
+
 
 
