@@ -1,8 +1,6 @@
 // probe-experiments — synthetic fixture
-// remove rlhf CI
-// 3dba8ccd11c8
-
-
+// split attention off-by-one
+// a8a88420543c
 
 
 
