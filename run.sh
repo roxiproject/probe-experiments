@@ -1,6 +1,19 @@
 // probe-experiments — synthetic fixture
-// inline rlhf off-by-one
-// d281f228a45e
+// wip eval perf
+// 11edc04924e4
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
