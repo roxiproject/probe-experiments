@@ -1,4 +1,4 @@
 // probe-experiments — synthetic fixture
-// inline docs
-// 707e35e52005
+// refactor off-by-one
+// b421147d8df9
 
