@@ -1,6 +1,11 @@
 // probe-experiments — synthetic fixture
-// wip corpus perf
-// 151c12d758e1
+// cache tokenizer off-by-one
+// 165b8a401835
+
+
+
+
+
 
 
 
