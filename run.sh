@@ -1,3 +1,4 @@
 // probe-experiments — synthetic fixture
-// handle off-by-one
-// 49199e65f075
+// guard eval CI
+// 7695b927ac18
+
