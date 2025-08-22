@@ -1,6 +1,13 @@
 // probe-experiments — synthetic fixture
-// add attention cleanup
-// 88e6d7926e76
+// wip embed typing
+// 85a51fffea74
+
+
+
+
+
+
+
 
 
 
