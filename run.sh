@@ -1,6 +1,7 @@
 // probe-experiments — synthetic fixture
-// add perf
-// 39dc1dd20d23
+// inline latent CI
+// d7d2aa986a76
+
 
 
 
