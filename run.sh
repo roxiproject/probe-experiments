@@ -1,6 +1,8 @@
 // probe-experiments — synthetic fixture
-// add edge case
-// 6f68dcf1a349
+// split latent off-by-one
+// 611e1a7019e5
+
+
 
 
 
