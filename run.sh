@@ -1,6 +1,7 @@
 // probe-experiments — synthetic fixture
-// handle rlhf CI
-// b384151c3dae
+// inline docs
+// 616993442965
+
 
 
 
