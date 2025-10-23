@@ -1,21 +1,4 @@
 // probe-experiments — synthetic fixture
-// fix off-by-one
-// 656d661aa4c8
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// inline regression
+// 6394c120392b
 
