@@ -1,4 +1,4 @@
 // probe-experiments — synthetic fixture
-// inline regression
-// 6394c120392b
+// bump corpus off-by-one
+// 535dfa7cd0ae
 
