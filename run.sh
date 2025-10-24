@@ -1,8 +1,3 @@
 // probe-experiments — synthetic fixture
-// refactor probe edge case
-// 99058c78747e
-
-
-
-
-
+// handle off-by-one
+// c7e0f18b1e1b
