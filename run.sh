@@ -1,6 +1,5 @@
 // probe-experiments — synthetic fixture
-// cache regression
-// 2eb6b05c2494
-
+// fix latent edge case
+// 41e786769e58
 
 
