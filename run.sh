@@ -1,6 +1,8 @@
 // probe-experiments — synthetic fixture
-// refactor cleanup
-// 0ab7b7826371
+// inline attention cleanup
+// b33b12df3ac1
+
+
 
 
 
