@@ -1,13 +1,4 @@
 // probe-experiments — synthetic fixture
-// inline attention cleanup
-// b33b12df3ac1
-
-
-
-
-
-
-
-
-
+// remove typing
+// 9d22a9f41686
 
