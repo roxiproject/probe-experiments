@@ -48,7 +48,7 @@ set -e
 end_epoch=$EPOCHREALTIME
 wall_time=$(awk -v a="$start_epoch" -v b="$end_epoch" 'BEGIN { printf "%.4f", b - a }')
 
-record=$(jq -n \
+record=$(jq -nc \
   --argjson params "$(jq '.params' <<<"$params_json")" \
   --arg param_hash "$param_hash" \
   --argjson exit_code "$exit_code" \
