@@ -1,0 +1,123 @@
+#!/usr/bin/env bash
+# Sweep runner: expand a parameter grid, run a user command once per
+# combination (optionally in parallel, bounded by --jobs), capture
+# results, and skip combinations already completed in a prior run.
+#
+# Usage:
+#   bin/sweep --config CONFIG.json --results RESULTS_DIR [--jobs N] \
+#             [--resume] -- CMD [ARGS...]
+#
+# Concurrency is bounded with a classic named-pipe token-bucket semaphore:
+# a FIFO is pre-loaded with N tokens, each worker consumes one token before
+# starting and returns it on completion, so at most N workers ever run at
+# once regardless of how many combinations exist.
+set -euo pipefail
+
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd -P)"
+
+usage() {
+  cat >&2 <<'EOF'
+usage: bin/sweep --config CONFIG.json --results RESULTS_DIR [--jobs N] [--resume] -- CMD [ARGS...]
+EOF
+}
+
+config=""
+results_dir=""
+jobs=1
+resume=0
+cmd=()
+
+while [ "$#" -gt 0 ]; do
+  case "$1" in
+    --config)
+      config=$2
+      shift 2
+      ;;
+    --results)
+      results_dir=$2
+      shift 2
+      ;;
+    --jobs)
+      jobs=$2
+      shift 2
+      ;;
+    --resume)
+      resume=1
+      shift
+      ;;
+    --)
+      shift
+      cmd=("$@")
+      break
+      ;;
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    *)
+      echo "sweep: unknown argument: $1" >&2
+      usage
+      exit 2
+      ;;
+  esac
+done
+
+if [ -z "$config" ] || [ -z "$results_dir" ] || [ "${#cmd[@]}" -eq 0 ]; then
+  usage
+  exit 2
+fi
+
+if ! [[ "$jobs" =~ ^[0-9]+$ ]] || [ "$jobs" -lt 1 ]; then
+  echo "sweep: --jobs must be a positive integer" >&2
+  exit 2
+fi
+
+mkdir -p "$results_dir"
+results_file="$results_dir/results.jsonl"
+touch "$results_file"
+
+completed_hashes_file=$(mktemp)
+trap 'rm -f "$completed_hashes_file"' EXIT
+if [ "$resume" -eq 1 ] && [ -s "$results_file" ]; then
+  jq -r 'select(.status == "completed") | .param_hash' "$results_file" \
+    | sort -u >"$completed_hashes_file"
+fi
+
+combos_file=$(mktemp)
+trap 'rm -f "$completed_hashes_file" "$combos_file"' EXIT
+python3 "$SCRIPT_DIR/../lib/grid_expand.py" "$config" >"$combos_file"
+
+total=$(wc -l <"$combos_file" | tr -d ' ')
+echo "sweep: $total combination(s), $jobs concurrent job(s), resume=$resume" >&2
+
+# Named-pipe token bucket bounding concurrency to $jobs.
+sem_fifo=$(mktemp -u)
+mkfifo "$sem_fifo"
+exec 3<>"$sem_fifo"
+rm -f "$sem_fifo"
+for _ in $(seq 1 "$jobs"); do
+  echo >&3
+done
+
+skipped=0
+launched=0
+while IFS= read -r combo_line; do
+  param_hash=$(jq -r '.param_hash' <<<"$combo_line")
+  if [ "$resume" -eq 1 ] && grep -qxF "$param_hash" "$completed_hashes_file"; then
+    skipped=$((skipped + 1))
+    continue
+  fi
+  read -r -u 3 -n 1 _token
+  (
+    "$SCRIPT_DIR/sweep-worker" "$results_dir" "$param_hash" "$combo_line" -- "${cmd[@]}" \
+      || true
+    echo >&3
+  ) &
+  launched=$((launched + 1))
+done <"$combos_file"
+
+wait
+exec 3>&-
+
+echo "sweep: launched=$launched skipped=$skipped total=$total" >&2
+echo "sweep: results at $results_file" >&2
