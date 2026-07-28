@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+# Snapshot the interpreter, installed packages, git state, and OS/arch so a
+# sweep's results directory carries enough information to reproduce the run.
+#
+# Usage: bin/capture-env [CODE_DIR] > manifest.json
+#   CODE_DIR defaults to the current directory and is where git commit/dirty
+#   state is read from.
+set -euo pipefail
+
+code_dir=${1:-.}
+
+python_bin=$(command -v python3 || command -v python || true)
+python_version="unknown"
+pip_freeze="[]"
+if [ -n "$python_bin" ]; then
+  python_version=$("$python_bin" -c 'import sys; print(sys.version.split()[0])')
+  if "$python_bin" -m pip --version >/dev/null 2>&1; then
+    pip_freeze=$("$python_bin" -m pip freeze 2>/dev/null | jq -R -s -c 'split("\n") | map(select(length > 0))')
+  fi
+fi
+
+git_commit="unknown"
+git_dirty="unknown"
+if git -C "$code_dir" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  git_commit=$(git -C "$code_dir" rev-parse HEAD)
+  if [ -n "$(git -C "$code_dir" status --porcelain)" ]; then
+    git_dirty="true"
+  else
+    git_dirty="false"
+  fi
+fi
+
+os_name=$(uname -s)
+os_release=$(uname -r)
+arch=$(uname -m)
+hostname_val=$(hostname)
+captured_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+
+jq -n \
+  --arg python_version "$python_version" \
+  --argjson pip_freeze "$pip_freeze" \
+  --arg git_commit "$git_commit" \
+  --arg git_dirty "$git_dirty" \
+  --arg os_name "$os_name" \
+  --arg os_release "$os_release" \
+  --arg arch "$arch" \
+  --arg hostname "$hostname_val" \
+  --arg captured_at "$captured_at" \
+  '{
+    captured_at: $captured_at,
+    python_version: $python_version,
+    pip_freeze: $pip_freeze,
+    git_commit: $git_commit,
+    git_dirty: ($git_dirty == "true"),
+    os: {name: $os_name, release: $os_release, arch: $arch},
+    hostname: $hostname
+  }'
