@@ -91,3 +91,15 @@ contention, environment capture against clean/dirty git worktrees, single-run
 capture in `sweep-worker`, concurrency bounding and resume behavior in the
 `sweep` orchestrator (including an end-to-end run of the toy experiment), and
 result aggregation/CSV export.
+
+## Related projects
+
+Part of the roxiproject ML/research thread:
+
+- [attention-probe-kit](https://github.com/roxiproject/attention-probe-kit) — instruments attention heads and produces the activation data this toolkit's sweeps orchestrate around.
+- [attention](https://github.com/roxiproject/attention) — attention/KV-cache implementations, verified bit-for-bit against a full forward pass.
+- [embed-bench](https://github.com/roxiproject/embed-bench) — embedding quality benchmarking (nearest-neighbor recovery under k-means/LSH/IVF).
+- [lora-kit](https://github.com/roxiproject/lora-kit) — LoRA fine-tuning utilities, gradient-checked against dense-layer baselines.
+- [corpus-kit / corpus-bench / corpus-tokenizer-kit](https://github.com/roxiproject) — corpus/tokenizer pipeline.
+- [rlhf-experiments / rlhf-distill-experiments](https://github.com/roxiproject) — RLHF training/distillation.
+- [roxiproject](https://github.com/roxiproject/roxiproject) — account root / full project index.
