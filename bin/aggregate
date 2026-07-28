@@ -1,0 +1,94 @@
+#!/usr/bin/env bash
+# Summarize a sweep's results.jsonl: pull a metric out of each run's
+# captured stdout, print a table sorted by that metric, and optionally
+# export CSV.
+#
+# Usage:
+#   bin/aggregate --results RESULTS_DIR --metric METRIC_KEY [--top N] \
+#                 [--order asc|desc] [--csv OUT.csv]
+#
+# METRIC_KEY is looked up in the last JSON object found on each run's
+# captured stdout (e.g. a line like {"metric": 0.42} printed by the
+# experiment command). Runs whose stdout has no such JSON value, or that
+# did not exit 0, are reported but sort to the bottom.
+set -euo pipefail
+
+usage() {
+  cat >&2 <<'EOF'
+usage: bin/aggregate --results RESULTS_DIR --metric METRIC_KEY [--top N] [--order asc|desc] [--csv OUT.csv]
+EOF
+}
+
+results_dir=""
+metric_key=""
+top=0
+order="desc"
+csv_out=""
+
+while [ "$#" -gt 0 ]; do
+  case "$1" in
+    --results) results_dir=$2; shift 2 ;;
+    --metric) metric_key=$2; shift 2 ;;
+    --top) top=$2; shift 2 ;;
+    --order) order=$2; shift 2 ;;
+    --csv) csv_out=$2; shift 2 ;;
+    -h|--help) usage; exit 0 ;;
+    *) echo "aggregate: unknown argument: $1" >&2; usage; exit 2 ;;
+  esac
+done
+
+if [ -z "$results_dir" ] || [ -z "$metric_key" ]; then
+  usage
+  exit 2
+fi
+
+results_file="$results_dir/results.jsonl"
+if [ ! -f "$results_file" ]; then
+  echo "aggregate: no results file at $results_file" >&2
+  exit 1
+fi
+
+if [ "$order" != "asc" ] && [ "$order" != "desc" ]; then
+  echo "aggregate: --order must be asc or desc" >&2
+  exit 2
+fi
+
+# Build an enriched JSONL stream: each record gets a `metric` field pulled
+# from its stdout log (null if absent or unparsable), one line per run.
+enriched=$(mktemp)
+trap 'rm -f "$enriched"' EXIT
+while IFS= read -r line; do
+  stdout_path=$(jq -r '.stdout_path' <<<"$line")
+  metric_value="null"
+  if [ -f "$stdout_path" ]; then
+    # Take the last line in stdout that parses as JSON and has the key.
+    extracted=$(jq -c "select(has(\"$metric_key\")) | .[\"$metric_key\"]" "$stdout_path" 2>/dev/null | tail -n1 || true)
+    if [ -n "$extracted" ]; then
+      metric_value=$extracted
+    fi
+  fi
+  jq -c --argjson metric "$metric_value" '. + {metric: $metric}' <<<"$line"
+done <"$results_file" >"$enriched"
+
+# Rank by metric (nulls always sort last), reversing for descending order.
+if [ "$order" = "desc" ]; then
+  ranked=$(jq -s 'map(select(.metric != null)) as $withm | map(select(.metric == null)) as $withoutm | ($withm | sort_by(.metric) | reverse) + $withoutm' "$enriched")
+else
+  ranked=$(jq -s 'map(select(.metric != null)) as $withm | map(select(.metric == null)) as $withoutm | ($withm | sort_by(.metric)) + $withoutm' "$enriched")
+fi
+
+if [ "$top" -gt 0 ]; then
+  ranked=$(jq --argjson n "$top" '.[0:$n]' <<<"$ranked")
+fi
+
+printf '%-18s %12s %10s %8s\n' "param_hash" "metric" "wall_time" "status"
+jq -r '.[] | [.param_hash, (.metric // "n/a"), .wall_time_s, .status] | @tsv' <<<"$ranked" \
+  | awk -F'\t' '{printf "%-18s %12s %10s %8s\n", $1, $2, $3, $4}'
+
+if [ -n "$csv_out" ]; then
+  {
+    echo "param_hash,params,metric,exit_code,wall_time_s,status,finished_at"
+    jq -r '.[] | [.param_hash, (.params | tostring), (.metric // "n/a"), .exit_code, .wall_time_s, .status, .finished_at] | @csv' <<<"$ranked"
+  } >"$csv_out"
+  echo "aggregate: wrote CSV to $csv_out" >&2
+fi
