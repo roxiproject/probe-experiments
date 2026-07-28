@@ -112,3 +112,27 @@ EOF
   [ "$status" -ne 0 ]
   [[ "$output" == *"usage"* ]]
 }
+
+@test "empty params object fails with a clear error" {
+  cat >"$SCRATCH/empty.json" <<'EOF'
+{"params": {}}
+EOF
+  run python3 "$REPO_ROOT/lib/grid_expand.py" "$SCRATCH/empty.json"
+  [ "$status" -ne 0 ]
+}
+
+@test "string param values round-trip exactly" {
+  cat >"$SCRATCH/grid.json" <<'EOF'
+{"params": {"name": ["alpha", "beta"]}}
+EOF
+  names=$(python3 "$REPO_ROOT/lib/grid_expand.py" "$SCRATCH/grid.json" | jq -r '.params.name' | sort | tr '\n' ',')
+  [ "$names" = "alpha,beta," ]
+}
+
+@test "float param values are preserved without truncation" {
+  cat >"$SCRATCH/grid.json" <<'EOF'
+{"params": {"lr": [0.001, 0.123456]}}
+EOF
+  values=$(python3 "$REPO_ROOT/lib/grid_expand.py" "$SCRATCH/grid.json" | jq -r '.params.lr' | sort -n | tr '\n' ',')
+  [ "$values" = "0.001,0.123456," ]
+}
