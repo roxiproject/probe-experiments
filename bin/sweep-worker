@@ -1,0 +1,71 @@
+#!/usr/bin/env bash
+# Run a single sweep combination: set params as PARAM_* env vars, execute the
+# user command, capture stdout/stderr/exit-code/wall-time, and append one
+# JSONL record to the shared results file. Invoked by bin/sweep, one process
+# per combination; safe to call directly for debugging a single run.
+#
+# Usage: bin/sweep-worker RESULTS_DIR PARAM_HASH PARAMS_JSON -- CMD [ARGS...]
+set -euo pipefail
+
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd -P)"
+# shellcheck source=lib/append_jsonl.sh
+source "$SCRIPT_DIR/../lib/append_jsonl.sh"
+
+if [ "$#" -lt 4 ]; then
+  echo "usage: sweep-worker RESULTS_DIR PARAM_HASH PARAMS_JSON -- CMD [ARGS...]" >&2
+  exit 2
+fi
+
+results_dir=$1
+param_hash=$2
+params_json=$3
+shift 3
+if [ "${1:-}" != "--" ]; then
+  echo "sweep-worker: expected -- before the command" >&2
+  exit 2
+fi
+shift
+
+mkdir -p "$results_dir/logs"
+results_file="$results_dir/results.jsonl"
+out_file="$results_dir/logs/${param_hash}.out"
+err_file="$results_dir/logs/${param_hash}.err"
+
+# Export each param as PARAM_<UPPERCASED_KEY> so the user command can read
+# them from the environment; also passed as PARAMS_JSON for convenience.
+while IFS='=' read -r key value; do
+  [ -z "$key" ] && continue
+  export "PARAM_${key^^}=$value"
+done < <(jq -r '.params | to_entries[] | "\(.key)=\(.value)"' <<<"$params_json")
+export PARAMS_JSON="$params_json"
+export PARAM_HASH="$param_hash"
+
+start_epoch=$EPOCHREALTIME
+set +e
+"$@" >"$out_file" 2>"$err_file"
+exit_code=$?
+set -e
+end_epoch=$EPOCHREALTIME
+wall_time=$(awk -v a="$start_epoch" -v b="$end_epoch" 'BEGIN { printf "%.4f", b - a }')
+
+record=$(jq -n \
+  --argjson params "$(jq '.params' <<<"$params_json")" \
+  --arg param_hash "$param_hash" \
+  --argjson exit_code "$exit_code" \
+  --argjson wall_time "$wall_time" \
+  --arg stdout_path "$out_file" \
+  --arg stderr_path "$err_file" \
+  --arg finished_at "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+  '{
+    param_hash: $param_hash,
+    params: $params,
+    exit_code: $exit_code,
+    wall_time_s: $wall_time,
+    stdout_path: $stdout_path,
+    stderr_path: $stderr_path,
+    status: (if $exit_code == 0 then "completed" else "failed" end),
+    finished_at: $finished_at
+  }')
+
+append_jsonl_locked "$results_file" "$record"
+exit "$exit_code"
